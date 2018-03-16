@@ -23,7 +23,7 @@
             <p class="home">
                 <img class="item-photo" src="@Html.DisplayFor(modelItem => item.TopPhoto)" /><br />
 
-                @Html.ActionLink("Details", "Details", new { id = item.TopID })
+                @Html.ActionLink("Details", "Details", new { id = item.TopID }, new { @class = "nonnav-link" })
             </p>
             </div>
         </div>

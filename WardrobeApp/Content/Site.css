@@ -35,6 +35,7 @@ a.navbar-brand {
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
     text-shadow: 1px 1px darkgoldenrod;
+   
 }
 
     a.navbar-brand:hover {
@@ -43,7 +44,8 @@ a.navbar-brand {
     }
 
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a { 
+    margin-left: 5vw;
     color: #ffd10b !important;
     color: crimson !important;
     font-family: 'Montserrat', sans-serif;
@@ -74,6 +76,7 @@ h1#home {
 h2.home {
     text-align: center;
     font-family: 'Itim', cursive;
+    
 }
 
 a.btn.btn-default.home {
@@ -82,6 +85,7 @@ a.btn.btn-default.home {
     color: #ffd10b;
     font-weight: bold;
     border: grey;
+    font-family: 'Montserrat', sans-serif;
 }
 
     a.btn.btn-default.home:hover {
@@ -125,6 +129,7 @@ h3.item-name {
     text-align: center;
     font-family: 'Itim', cursive;
     color: crimson;
+    
 }
 
 div.thumbnail {
@@ -136,6 +141,7 @@ h2.title {
     font-size: 5rem;
     text-align: center;
     color:#ffd10b;
+    text-shadow: 1px 1px darkgoldenrod;
 }
 
 p.center-link {
@@ -148,16 +154,29 @@ div.row.title {
 
 a.btn.btn-default.item-index {
     margin-top: 2%;
-    background-color: #ffd10b;
+    background-color: #ffd96b;
     color: crimson;
     font-weight: bold;
     border: grey;
+    font-family: 'Montserrat', sans-serif;
 }
 
     a.btn.btn-default.item-index:hover {
         margin-top: 2%;
         background-color: crimson;
-        color: #ffd10b;
+        color: #ffd96b;
         font-weight: bold;
         border: crimson;
+    }
+a.nonnav-link {
+    font-weight: bold;
+    color: crimson !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    a.nonnav-link:hover {
+        color: #ffd96b !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
+        text-shadow: 1px 1px darkgoldenrod;
     }

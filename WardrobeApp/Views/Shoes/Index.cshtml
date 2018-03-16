@@ -4,54 +4,30 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+
+<div class="row title">
+    <h2 class="title">Shoes</h2>
+</div>
+<p class="center-link">
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a class="btn btn-default item-index" href="/Shoes/Create">Create New</a>
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoePhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occassion.OccassionType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.Season1)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoeName)
-        </td>
-        <td>
-            <img src="@Html.DisplayFor(modelItem => item.ShoePhoto)" /> 
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoeColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occassion.OccassionType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.Season1)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ShoeID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ShoeID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ShoeID })
-        </td>
-    </tr>
-}
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 col-sm-6 col-lg-1-xs-12">
+            <div class="thumbnail">
+                <h3 class="item-name">
+                    @Html.DisplayFor(modelItem => item.ShoeName)
+                </h3>
+                <p class="home">
+                    <img class="item-photo" src="@Html.DisplayFor(modelItem => item.ShoePhoto)" /><br />
 
-</table>
+                    @Html.ActionLink("Details", "Details", new { id = item.ShoeID }, new { @class = "nonnav-link" })
+                </p>
+            </div>
+        </div>
+    }
+</div>
