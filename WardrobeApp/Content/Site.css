@@ -22,3 +22,80 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+/*nav bar styling*/
+.navbar-inverse {
+    background-color: #ffdfcb !important;
+    border-color: #ffdfcb !important;
+}
+a.navbar-brand {
+    color: #ffd10b !important;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+a.navbar-brand:hover {
+    color: crimson !important;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffd10b !important;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: crimson !important;
+    font-weight: bold;
+}
+
+
+
+    /*home index page stlying*/
+div .thumbnail.home {
+    background-color: #ffd96b;
+    border: none;
+}
+h1#home {
+    color: #ffdfcb;
+    font-family: 'Satisfy', cursive;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 5rem;
+}
+h2.home{
+    text-align: center;
+    font-family: 'Itim', cursive;
+
+}
+a.btn.btn-default.home {
+    margin-top: 2%;
+    background-color: grey;
+    color: #ffd10b;
+    font-weight: bold;
+    border: grey;
+}
+a.btn.btn-default.home:hover {
+    margin-top: 2%;
+    background-color: grey;
+    color: crimson;
+    font-weight: bold;
+    border: crimson;
+}
+p.home {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/*footer styling*/
+footer{
+    text-align: center;
+}
+p#footer {
+    color: #ffdfcb;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}

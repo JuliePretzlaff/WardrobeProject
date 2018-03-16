@@ -203,6 +203,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\HomeStyleSheet.css" />
     <Content Include="Content\images\accimages\earrings.jpg" />
     <Content Include="Content\images\accimages\hat.jpg" />
     <Content Include="Content\images\accimages\necklace.jpg" />
@@ -211,6 +212,7 @@
     <Content Include="Content\images\bottomimages\leggings.jpg" />
     <Content Include="Content\images\bottomimages\skirt.jpg" />
     <Content Include="Content\images\bottomimages\zipoff.jpg" />
+    <Content Include="Content\images\pexels-photo-237900.jpeg" />
     <Content Include="Content\images\shoesimages\flats.jpg" />
     <Content Include="Content\images\shoesimages\hikingboots.jpg" />
     <Content Include="Content\images\shoesimages\runningshoes.jpg" />
