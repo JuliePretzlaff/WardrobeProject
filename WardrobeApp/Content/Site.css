@@ -29,33 +29,40 @@ textarea {
     background-color: #ffdfcb !important;
     border-color: #ffdfcb !important;
 }
+
 a.navbar-brand {
     color: #ffd10b !important;
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
+    text-shadow: 1px 1px darkgoldenrod;
 }
-a.navbar-brand:hover {
-    color: crimson !important;
-}
+
+    a.navbar-brand:hover {
+        color: crimson !important;
+        text-shadow: 1px 1px grey;
+    }
 
 
 .navbar-inverse .navbar-nav > li > a {
     color: #ffd10b !important;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-}
-.navbar-inverse .navbar-nav > li > a:hover {
     color: crimson !important;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #ffd10b !important;
+        background-color: crimson;
+    }
 
 
-    /*home index page stlying*/
+
+/*home index page stlying*/
 div .thumbnail.home {
     background-color: #ffd96b;
     border: none;
 }
+
 h1#home {
     color: #ffdfcb;
     font-family: 'Satisfy', cursive;
@@ -63,25 +70,28 @@ h1#home {
     margin-bottom: 10vh;
     font-size: 5rem;
 }
-h2.home{
+
+h2.home {
     text-align: center;
     font-family: 'Itim', cursive;
-
 }
+
 a.btn.btn-default.home {
     margin-top: 2%;
-    background-color: grey;
+    background-color: darkgoldenrod;
     color: #ffd10b;
     font-weight: bold;
     border: grey;
 }
-a.btn.btn-default.home:hover {
-    margin-top: 2%;
-    background-color: grey;
-    color: crimson;
-    font-weight: bold;
-    border: crimson;
-}
+
+    a.btn.btn-default.home:hover {
+        margin-top: 2%;
+        background-color: #ffd10b;
+        color: crimson;
+        font-weight: bold;
+        border: crimson;
+    }
+
 p.home {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -91,11 +101,63 @@ p.home {
 
 
 /*footer styling*/
-footer{
+footer {
     text-align: center;
 }
+
 p#footer {
-    color: #ffdfcb;
+    color: crimson;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+/*item index stlying*/
+img.item-photo {
+    height: 30vh;
+}
+/*img.item-photo:hover{
+    height: 60vh;
+}*/
+
+h3.item-name {
+    text-align: center;
+    font-family: 'Itim', cursive;
+    color: crimson;
+}
+
+div.thumbnail {
+    border: none;
+}
+
+h2.title {
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+    text-align: center;
+    color:#ffd10b;
+}
+
+p.center-link {
+    text-align: center;
+}
+div.row.title {
+   
+    
+}
+
+a.btn.btn-default.item-index {
+    margin-top: 2%;
+    background-color: #ffd10b;
+    color: crimson;
+    font-weight: bold;
+    border: grey;
+}
+
+    a.btn.btn-default.item-index:hover {
+        margin-top: 2%;
+        background-color: crimson;
+        color: #ffd10b;
+        font-weight: bold;
+        border: crimson;
+    }

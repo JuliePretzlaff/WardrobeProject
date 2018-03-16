@@ -4,3 +4,8 @@
     background-size: cover;
     background-attachment: fixed;
 }
+p#footer {
+    color: #ffdfcb;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
