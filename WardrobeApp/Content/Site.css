@@ -180,3 +180,6 @@ a.nonnav-link {
         text-decoration: none !important;
         text-shadow: 1px 1px darkgoldenrod;
     }
+    p#outfit{
+       text-align:center;
+    }

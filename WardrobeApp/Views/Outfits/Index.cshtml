@@ -16,16 +16,26 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-md-3 col-sm-6 col-lg-1-xs-12">
+        <div class="col-md-6 col-sm-12 col-lg-1-xs-12">
             <div class="thumbnail">
                 <h3 class="item-name">
                     @Html.DisplayFor(modelItem => item.OutfitName)
                 </h3>
-                <p class="home">
-                    <img class="item-photo" src="@Html.DisplayFor(modelItem => item.Top.TopPhoto)" /><br />
-                    <img class="item-photo" src="@Html.DisplayFor(modelItem => item.Bottom.BottomPhoto)" /><br />
-                    <img class="item-photo" src="@Html.DisplayFor(modelItem => item.Accessory.AccessoryPhoto)" /><br />
-                    <img class="item-photo" src="@Html.DisplayFor(modelItem => item.Shoe.ShoePhoto)" /><br />
+                <div class="row">
+
+                    <div class="col-3">
+                        <p id="outfit">
+                            <img class="item-photo" src="@Html.DisplayFor(modelItem => item.Top.TopPhoto)" /><img class="item-photo" src="@Html.DisplayFor(modelItem => item.Accessory.AccessoryPhoto)" />
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p id="outfit">
+                            <img class="item-photo" src="@Html.DisplayFor(modelItem => item.Bottom.BottomPhoto)" /><img class="item-photo" src="@Html.DisplayFor(modelItem => item.Shoe.ShoePhoto)" />
+                        </p>
+                    </div>
+                </div>
+
+                <p id="outfit">
                     @Html.ActionLink("Details", "Details", new { id = item.OutfitID }, new { @class = "nonnav-link" })
                 </p>
             </div>
