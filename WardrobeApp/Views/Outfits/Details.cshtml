@@ -3,72 +3,37 @@
 @{
     ViewBag.Title = "Details";
 }
+<h2 class="title">Outfit Details</h2>
+<h3 class="item-name">
+    @Html.DisplayFor(model => model.OutfitName) Outfit
+</h3>
+<h4>Top:</h4>
+<p class="odetails">
+    @Html.DisplayFor(model => model.Top.TopName)
+</p>
+<h4>Bottom:</h4>
+<p class="odetails">
+    @Html.DisplayFor(model => model.Bottom.BottomName)
+</p>
+<h4>Accessory:</h4>
+<p class="odetails">
+    @Html.DisplayFor(model => model.Accessory.AccessoryName)
+</p>
+<h4>Shoes:</h4>
+<p class="odetails">
+    @Html.DisplayFor(model => model.Shoe.ShoeName)
+</p>
+<h4>Season:</h4>
+<p class="odetails">
+    @Html.DisplayFor(model => model.Season.Season1)
+</p>
+<h4>Occasion:</h4>
+<p class="odetails">
+    @Html.DisplayFor(model => model.Occassion.OccassionType)
+</p>
 
-<h2>Details</h2>
 
-<div>
-    <h4>Outfit</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.OutfitName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.OutfitName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Accessory.AccessoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Bottom.BottomName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Bottom.BottomName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occassion.OccassionType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occassion.OccassionType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.Season1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.Season1)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Shoe.ShoeName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Shoe.ShoeName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Top.TopName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Top.TopName)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
-    @Html.ActionLink("Back to List", "Index")
+<p id="detail-links">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }, new { @class = "nonnav-link" }) |
+    @Html.ActionLink("Back to List", "Index", "Index", new { @class = "nonnav-link" })
 </p>

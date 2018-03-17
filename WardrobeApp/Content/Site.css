@@ -184,8 +184,9 @@ a.nonnav-link {
     a.nonnav-link:active {
         color: #ffd96b !important;
         background-color: transparent !important;
-        text-decoration: none !important;
+        
         text-shadow: 1px 1px darkgoldenrod;
+        text-decoration: none !important;
     }
     p#outfit{
        text-align:center;
@@ -202,6 +203,7 @@ a.nonnav-link {
 h4 {
     color: crimson;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 p.details {
     text-align: center;
@@ -237,3 +239,8 @@ a.nonnav-link-2 {
     p#detail-links{
         text-align:center;
     }
+p.odetails {
+    margin-bottom: 5vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

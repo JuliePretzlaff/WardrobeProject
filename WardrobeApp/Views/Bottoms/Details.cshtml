@@ -4,55 +4,53 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Bottom</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occassion.OccassionType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occassion.OccassionType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.Season1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.Season1)
-        </dd>
-
-    </dl>
+<div class="row title">
+    <h2 class="title">Bottom Details</h2>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+
+
+
+<div class="row">
+
+    <div class="col-md-4 col-sm-3 col-xs-0"></div>
+    <div class="col-md-4 col-sm-6 col-lg-1-xs-12">
+        <div class="thumbnail details">
+            <h3 class="item-name">
+                @Html.DisplayFor(modelItem => Model.BottomName)
+            </h3>
+            <p class="home">
+                <img class="item-details" src="@Html.DisplayFor(modelItem => Model.BottomPhoto)" />
+                <h4>
+                    Color:
+                </h4>
+
+            <p class="details">
+                @Html.DisplayFor(model => model.BottomColor)
+            </p>
+
+            <h4>
+                Season:
+            </h4>
+
+            <p class="details">
+                @Html.DisplayFor(model => model.Season.Season1)
+            </p>
+
+            <h4>
+                Occassion:
+            </h4>
+            <p class="details">
+                @Html.DisplayFor(model => model.Occassion.OccassionType)
+            </p>
+
+            <p id="detail-links">
+                @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }, new { @class = "nonnav-link-2" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = Model.BottomID }, new { @class = "nonnav-link-2" }) |
+                @Html.ActionLink("Back to List", "Index", "Index", new { @class = "nonnav-link-2" })
+            </p>
+        </div>
+    </div>
+
+</div>
