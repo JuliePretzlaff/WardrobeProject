@@ -1,7 +1,7 @@
 ﻿body {
     background-image: url('images/pexels-photo-237900.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    background-size: 100vw;
     background-attachment: fixed;
 }
 p#footer {

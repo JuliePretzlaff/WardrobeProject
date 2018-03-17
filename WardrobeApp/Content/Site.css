@@ -71,6 +71,7 @@ h1#home {
     margin-top: 10vh;
     margin-bottom: 10vh;
     font-size: 5rem;
+    text-shadow: 1px 1px crimson;
 }
 
 h2.home {
@@ -133,7 +134,9 @@ h3.item-name {
 }
 
 div.thumbnail {
-    border: none;
+    border-color: lightgrey;
+    border: solid;
+    border-width: 1px;
 }
 
 h2.title {
@@ -147,10 +150,7 @@ h2.title {
 p.center-link {
     text-align: center;
 }
-div.row.title {
-   
-    
-}
+
 
 a.btn.btn-default.item-index {
     margin-top: 2%;
@@ -172,6 +172,7 @@ a.nonnav-link {
     font-weight: bold;
     color: crimson !important;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5vh;
 }
 
     a.nonnav-link:hover {
@@ -180,6 +181,59 @@ a.nonnav-link {
         text-decoration: none !important;
         text-shadow: 1px 1px darkgoldenrod;
     }
+    a.nonnav-link:active {
+        color: #ffd96b !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
+        text-shadow: 1px 1px darkgoldenrod;
+    }
     p#outfit{
        text-align:center;
+    }
+    div.thumbnail.outfit{
+        border-color: lightgrey;
+        border: solid;
+        border-width: 1px;
+    }
+
+
+
+    /*details styling*/
+h4 {
+    color: crimson;
+    text-align: center;
+}
+p.details {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+div.thumbnail.details {
+    background-color: #ffd96b;
+    border: none;
+}
+img.item-details {
+    border: solid;
+    border-color: darkgoldenrod;
+    height: 50vh;
+}
+a.nonnav-link-2 {
+    font-weight: bold;
+    color: crimson !important;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5vh;
+}
+
+    a.nonnav-link-2:hover {
+        color: darkgoldenrod !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
+    }
+    a.nonnav-link-2:active {
+        color: darkgoldenrod !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
+    }
+
+    p#detail-links{
+        text-align:center;
     }
